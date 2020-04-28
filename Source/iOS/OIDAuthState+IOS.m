@@ -19,7 +19,7 @@
 #import "OIDAuthState+IOS.h"
 #import "OIDExternalUserAgentIOS.h"
 #import "OIDExternalUserAgentCatalyst.h"
-
+#import "OIDExternalUserAgentIOSSafariViewController.h"
 @implementation OIDAuthState (IOS)
 
 + (id<OIDExternalUserAgentSession>)
@@ -31,7 +31,7 @@
   externalUserAgent = [[OIDExternalUserAgentCatalyst alloc]
       initWithPresentingViewController:presentingViewController];
 #else // TARGET_OS_MACCATALYST
-  externalUserAgent = [[OIDExternalUserAgentIOS alloc] initWithPresentingViewController:presentingViewController];
+  externalUserAgent = [[OIDExternalUserAgentIOSSafariViewController alloc] initWithPresentingViewController:presentingViewController];
 #endif // TARGET_OS_MACCATALYST
   return [self authStateByPresentingAuthorizationRequest:authorizationRequest
                                        externalUserAgent:externalUserAgent
