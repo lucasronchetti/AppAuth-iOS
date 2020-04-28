@@ -51,6 +51,7 @@
 #import "OIDExternalUserAgentIOS.h"
 #import "OIDExternalUserAgentIOSCustomBrowser.h"
 #import "OIDExternalUserAgentCatalyst.h"
+#import "OIDExternalUserAgentIOSSafariViewController.h"
 #elif TARGET_OS_MAC
 #import "OIDAuthState+Mac.h"
 #import "OIDAuthorizationService+Mac.h"

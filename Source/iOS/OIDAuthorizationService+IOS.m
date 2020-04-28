@@ -19,7 +19,7 @@
 #import "OIDAuthorizationService+IOS.h"
 #import "OIDExternalUserAgentIOS.h"
 #import "OIDExternalUserAgentCatalyst.h"
-
+#import "OIDExternalUserAgentIOSSafariViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation OIDAuthorizationService (IOS)
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
   externalUserAgent = [[OIDExternalUserAgentCatalyst alloc]
       initWithPresentingViewController:presentingViewController];
 #else // TARGET_OS_MACCATALYST
-  externalUserAgent = [[OIDExternalUserAgentIOS alloc] initWithPresentingViewController:presentingViewController];
+  externalUserAgent = [[OIDExternalUserAgentIOSSafariViewController alloc] initWithPresentingViewController:presentingViewController];
 #endif // TARGET_OS_MACCATALYST
   return [self presentAuthorizationRequest:request externalUserAgent:externalUserAgent callback:callback];
 }

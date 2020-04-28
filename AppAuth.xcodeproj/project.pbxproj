@@ -13,6 +13,9 @@
 		06C19E9B22B474A200C19CE1 /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6431F31F228A980075B6B5 /* OIDEndSessionResponse.m */; };
 		06C19E9C22B474A600C19CE1 /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CF37C06B1F1FC21A00662E41 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06C19E9D22B474AD00C19CE1 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF37C06C1F1FC21A00662E41 /* OIDEndSessionRequest.m */; };
+		335699002458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335698FF2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m */; };
+		335699012458C28F00F52B0F /* OIDExternalUserAgentIOSSafariViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 335698FE2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		335699022458C28F00F52B0F /* OIDExternalUserAgentIOSSafariViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 335698FF2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m */; };
 		340DAE571D5821A100EC285B /* OIDAuthorizationService+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 340DAE261D581FE700EC285B /* OIDAuthorizationService+Mac.m */; };
 		340DAE581D5821A100EC285B /* OIDExternalUserAgentMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 340DAE281D581FE700EC285B /* OIDExternalUserAgentMac.m */; };
 		340DAE591D5821A100EC285B /* OIDAuthState+Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 340DAE2A1D581FE700EC285B /* OIDAuthState+Mac.m */; };
@@ -605,6 +608,8 @@
 		039697441FA8258D003D1FB2 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OIDURLSessionProvider.h; sourceTree = "<group>"; };
 		039697451FA8258D003D1FB2 /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OIDURLSessionProvider.m; sourceTree = "<group>"; };
 		0396974C1FA827AD003D1FB2 /* OIDURLSessionProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OIDURLSessionProviderTests.m; sourceTree = "<group>"; };
+		335698FE2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OIDExternalUserAgentIOSSafariViewController.h; sourceTree = "<group>"; };
+		335698FF2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OIDExternalUserAgentIOSSafariViewController.m; sourceTree = "<group>"; };
 		340DAE251D581FE700EC285B /* OIDAuthorizationService+Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OIDAuthorizationService+Mac.h"; sourceTree = "<group>"; };
 		340DAE261D581FE700EC285B /* OIDAuthorizationService+Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OIDAuthorizationService+Mac.m"; sourceTree = "<group>"; };
 		340DAE271D581FE700EC285B /* OIDExternalUserAgentMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OIDExternalUserAgentMac.h; sourceTree = "<group>"; };
@@ -1060,6 +1065,8 @@
 		F6F60FAF1D2BFEF000325CB3 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				335698FE2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.h */,
+				335698FF2458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m */,
 				F6F60FB31D2BFEFE00325CB3 /* OIDAuthorizationService+IOS.h */,
 				F6F60FB11D2BFEFE00325CB3 /* OIDAuthorizationService+IOS.m */,
 				345AE746202D526800738D22 /* OIDExternalUserAgentIOSCustomBrowser.h */,
@@ -1145,6 +1152,7 @@
 				A6DEAB9B2018E4AD0022AC32 /* OIDExternalUserAgent.h in Headers */,
 				A6DEABA42018E4B90022AC32 /* OIDExternalUserAgentSession.h in Headers */,
 				343AAAF51E83499000F9D36E /* OIDServiceConfiguration.h in Headers */,
+				335699012458C28F00F52B0F /* OIDExternalUserAgentIOSSafariViewController.h in Headers */,
 				343AAAE91E83499000F9D36E /* OIDAuthStateErrorDelegate.h in Headers */,
 				343AAAE51E83499000F9D36E /* OIDAuthorizationService.h in Headers */,
 				343AAAF01E83499000F9D36E /* OIDRegistrationRequest.h in Headers */,
@@ -1799,6 +1807,7 @@
 				345AE747202D526900738D22 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */,
 				341741EB1C5D8243000EF209 /* OIDURLQueryComponent.m in Sources */,
 				341741E11C5D8243000EF209 /* OIDFieldMapping.m in Sources */,
+				335699002458C28300F52B0F /* OIDExternalUserAgentIOSSafariViewController.m in Sources */,
 				039697461FA8258D003D1FB2 /* OIDURLSessionProvider.m in Sources */,
 				341741DF1C5D8243000EF209 /* OIDError.m in Sources */,
 				341741DB1C5D8243000EF209 /* OIDAuthorizationRequest.m in Sources */,
@@ -1957,6 +1966,7 @@
 				343AAA701E83467D00F9D36E /* OIDAuthState+IOS.m in Sources */,
 				343AAA921E83478900F9D36E /* OIDTokenResponse.m in Sources */,
 				343AAA871E83478900F9D36E /* OIDErrorUtilities.m in Sources */,
+				335699022458C28F00F52B0F /* OIDExternalUserAgentIOSSafariViewController.m in Sources */,
 				343AAA811E83477100F9D36E /* OIDURLQueryComponent.m in Sources */,
 				343AAA721E83469600F9D36E /* OIDAuthorizationRequest.m in Sources */,
 				343AAA831E83478900F9D36E /* OIDAuthorizationService.m in Sources */,
